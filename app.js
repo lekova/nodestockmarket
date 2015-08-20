@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 var fs = require('fs');
 var User = require('./models/User.js');
+require('dotenv').load();
 
 var app = express();
 
