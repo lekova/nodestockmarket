@@ -14,11 +14,12 @@ function addUser(username, password, callback) {
   instance.save(function (err) {
     if (err) {
       callback(err);
-}
-else {
+    }
+    else {
       callback(null, instance);
     }
-}); }
+  });
+}
 
 // Exports
 module.exports.addUser = addUser;
